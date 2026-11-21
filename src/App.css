@@ -1,0 +1,40 @@
+/* =========================
+   ROOT OVERRIDE
+   (Prevents index.css from
+   constraining the layout)
+========================= */
+#root {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  border-inline: none !important;
+  text-align: left !important;
+}
+
+/* =========================
+   BASE RESET
+========================= */
+* {
+  box-sizing: border-box;
+}
+
+/* =========================
+   LOGIN PAGE
+   (All main app styles are
+   inlined inside App.jsx)
+========================= */
+
+.login-modern-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #080c14;
+}
+
+/* Auth error fallback */
+.error {
+  color: #ff7070;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
